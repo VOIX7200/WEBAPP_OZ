@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+	<Script src="Redirect.js"></script>
+	<meta charset="utf-8">
+      <title>jQuery UI Slider functionality</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#slider-1" ).slider();
+         });
+		 
+	
+		 
+      </script>
+</head>
+<body>
+
+<table id="table1">
+
+    <tr class="head">
+        <td class="left" colspan="2">
+            <!--PAGE LINKS-->
+        </td>
+    </tr>
+    <tr>
+        <td class="left_link">
+            <h1>
+                <a name="nav_home" href="index.html" id="home_link" class="home">HOME</a><br>
+                <a name="nav_adopt" href="adoption.html" id="adoption_link">ADOPTION</a><br>
+                <a name="nav_about" href="about.html" id="about_link">ABOUT</a><br>
+                <a name="nav_contact" href="contact.html" id="contact_link">CONTACT</a><br>
+            </h1>
+        </td>
+		<td class="content">
+            <table>			
+			 
+			<tr style="height:10px; margin:0;">
+               <td><h1>CONTACT US</h1></td><td><H1>DATE<p id="demo"></p></H1></td>
+			<tr>
+		             
+            <hr>
+            <p>
+                Use the form below to contact us if you have any questions, queries or even any requests.
+                We are always happy to hear from you all.
+            </p>
+            <h1 class="subhead">Contact Form</h1>
+            <form name="message_form">
+                <table id="table2" class="inner_table">
+                    <tr>
+                        <td>Enter Name</td>
+                        <td><input type="text" name="name_field"></td>
+                    </tr>
+					<tr>
+						<td></td>
+						<td>
+						<input type="radio" id="rinfo" name="rbutton" value="information">Information
+						<input type="radio" id="rdona" name="rbutton" value="Donation">Donation
+						<input type="radio" id="radop" name="rbutton" value="Donation">Adoption
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+						<input type="checkbox" id="cdona" name="rbutton" value="">Zoo Volunteer
+						<input type="checkbox" id="cadop" name="rbutton" value="">Email Newsletter 
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Would you like to make a donation<br/>
+							<table width=100%>
+								<td>£10</td>
+								<td>£20</td>
+								<td>£30</td>
+								<td>£40</td>
+								<td>£50</td>
+								<td>£60</td>
+								<td>£70</td>
+								<td>£80</td>
+								<td>£90</td>
+								<td>£100</td>
+							</table>
+							<div id="slider-1"></div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+                        <td>Enter Address</td>
+                        <td><input type="text" name="address_field"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Postcode</td>
+                        <td><input type="text" name="postcode_field"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Email</td>
+                        <td><input type="text" name="email_field"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <!-- <td><input type="button" id="submit_message" onclick="return redirect()"
+                                   value="Send"/></td>-->
+					<!--<td><input type="button" id="submit_message" onclick="window.location='adoption_fail.html'"
+                                   value="Send"/></td>-->
+					 <td><input type="button" id="submit_message" onclick="return redirect()"
+                                   value="Send"/></td>
+								   
+								   
+				
+							   
+                    </tr>
+					
+					 
+                </table
+            </form>			
+        </td>
+    </tr>
+    <tr class="foot">
+        <td class="left" colspan="2">
+            Please ensure you check the <a id="footer_term" href="terms.html"  onclick="window.open('terms.html', 'newwindow', 'width=300, height=250'); return false;">Terms</a> of our test zoo site.
+        </td>
+	</tr>
+	<tr>
+		<td class="left" colspan="2">
+			Return to <a href="http://www.thetestroom.com">EMMANUEL DEMOS.COM</a><br>
+			<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			Blog - Post [Large Mobile Banner] 
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-1995601812304119"
+				 data-ad-slot="9978878768"
+				 data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>-->
+		</td>
+    </tr>
+</table>
+<script>
+	 const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script
+
+</body>
+</html>

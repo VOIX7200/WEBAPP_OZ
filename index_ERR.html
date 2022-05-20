@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form Design</title>
+<link href="style_login.css" type="text/css" rel="stylesheet">
+
+<script>
+function checkpass(){
+
+<!-- alert("i ma shit"); -->
+
+var username = "Bigdog";
+var password = "Opendoor1"; // user1***** 12345X
+var x = document.getElementById("usrnme").value; 
+var y = document.getElementById("pwd").value; 
+<!-- var x = document.forms["myForm"]["usrnme"].value; -->
+<!-- var y = document.forms["myForm"]["pwd"].value; -->
+<!-- alert(" usrname and pswd " + x + "---" + y); -->
+
+if(x==username & y== password){
+  <!-- alert("Successful login"); -->
+window.location = "file:///C:/CODE/apache-tomcat-8.5.73/webapps/Myapps/index2.html";
+<!-- location.replace("file:///C:/CODE/apache-tomcat-8.5.73/webapps/Myapps1/WebPage.html"); -->
+<!-- window.location.href("http://stackoverflow.com"); -->
+
+<!-- return true; -->
+}else if(x!=username | y!= password){
+  <!-- alert("UnSuccessful login"); -->
+  window.location ="file:///C:/CODE/apache-tomcat-8.5.73/webapps/Myapps/index_ERR.html?message=wrong username or password"
+  
+<!-- window.location = "file:///C:/CODE/apache-tomcat-8.5.73/webapps/Myapps/index2.html"; -->
+<!-- location.replace("file:///C:/CODE/apache-tomcat-8.5.73/webapps/Myapps1/WebPage.html"); -->
+<!-- window.location.href("http://stackoverflow.com"); -->
+
+<!-- return false; -->
+}
+
+
+}
+
+function logout(){
+
+}
+
+
+</script>
+
+
+
+
+
+<script>
+ window.onload= function(){
+
+ var url_string = (window.location.href).toLowerCase();
+ var url = new URL(url_string); 
+ var message = url.searchParams.get("message");
+
+ console.log("--" + message);
+ document.getElementById("error").innerHTML = message;
+
+}
+</script>
+</head>
+
+<body>
+<div class="loginbox">
+<img src="Whitecat.jpg" class="avatar">
+<p id="error" style="color:red;"></p> 
+<h1>Login Here</h1>
+
+<!-- <form name="myForm" class="passform" method="post" onsubmit="return checkpass()" action="index2.html" >  -->
+<!-- <form class="passform" onsubmit="checkpass()"> -->
+<!-- <form class="passform">  -->
+<p>Username</p>
+<input type="text"  id="usrnme" name="" placeholder="Enter Username">
+<p>Password</p>
+<input type="password" id="pwd" name="" placeholder="Enter Password">
+<!-- <input type="submit" name="" value="Login"><br> -->
+<input type="submit" name="" id="loginbt" value="Login" onClick="checkpass()" ><br>
+<a href="#">Lost you password?</a><br>
+<a href="#">Don't have an account?</a>
+
+<!-- </form>  -->
+
+</div>
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+
+</html>
